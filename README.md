@@ -1,3 +1,3 @@
 # Case Study for Google Analytics Certificate
 
-See markdown file for preview
+### See [Github_Case_Study.md](Github_Case_Study.md)
