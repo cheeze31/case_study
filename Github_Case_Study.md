@@ -210,7 +210,7 @@ weekday_sleep_plot <- ggplot(sleep_df, aes(x = weekday, y = TotalMinutesAsleep))
 weekday_sleep_plot + geom_boxplot(aes(fill = weekday))+scale_fill_brewer(palette="Set3")+labs(title = "Weekday and Total Minutes Sleeping", x = "Weekday", y = "Total Minutes Asleep") 
 ```
 
-![](Github_Case_Study_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](unnamed-chunk-10-1.png)<!-- -->
 
 From the visualization, we can see that Sunday has the highest median
 minutes asleep, while Friday has the lowest average minutes asleep.
@@ -256,7 +256,7 @@ weekday_step_plot <- ggplot(activity_df, aes(x = weekday, y = TotalSteps))
 weekday_step_plot + geom_boxplot(aes(fill = weekday))+scale_fill_brewer(palette="Set2")+labs(title = "Weekday and Total Step Count", x = "Weekday", y = "Total Steps")
 ```
 
-![](Github_Case_Study_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](unnamed-chunk-12-1.png)<!-- -->
 
 Sunday has the smallest median for total steps. This corresponds to what
 we found in the other plot: because people tend to sleep more on
@@ -300,7 +300,7 @@ sleeping_sedentary_plot <- ggplot(merged_activity_sleep, aes(x = TotalMinutesAsl
 sleeping_sedentary_plot + geom_point() + geom_smooth(method = "lm")+labs(title = "Total Minutes Sleeping and Total Minutes Sedentary", x = "Total Minutes Asleep", y = "Total Minutes Sedentary")
 ```
 
-![](Github_Case_Study_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](unnamed-chunk-14-1.png)<!-- -->
 
 ``` r
 cor(merged_activity_sleep$TotalMinutesAsleep,merged_activity_sleep$SedentaryMinutes) #calculate correlation coefficient
@@ -329,7 +329,7 @@ ggplot(df_avg, aes(x = hour, y = avg_steps, fill = weekday)) +
   labs(x = "Hour of the Day", y = "Average Steps", title = "Average Steps per Hour by Weekday")
 ```
 
-![](Github_Case_Study_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](unnamed-chunk-16-1.png)<!-- -->
 
 From this distribution, because the average steps for 8pm-6am are
 significantly less than the other hours, let’s narrow down the hours
@@ -350,7 +350,7 @@ ggplot(df_avg, aes(x = hour, y = avg_steps, fill = weekday)) +
   labs(x = "Hour of the Day", y = "Average Steps", title = "Average Steps per Hour by Weekday, 7AM to 7PM")
 ```
 
-![](Github_Case_Study_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](unnamed-chunk-17-1.png)<!-- -->
 
 Overall, we can see that people have the most steps per hour on
 Saturdays, while for other weekdays step count tends to be a lot lower.
